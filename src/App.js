@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 
-import './app.css'
+import './App.css'
 import Header from './components/header/header';
 //import Body from './components/body/body';
 import Footer from './components/footer/footer';
@@ -22,7 +22,7 @@ export default function App() {
         <Route exact path="/" component={Homepage} />
 
         <p>
-          <Link to="/mediaQuerie" style={{ textDecoration: "none", color: "white" }}>Media querie {new Date().toLocaleDateString()}</Link>
+          <Link to="/mediaQuerie" style={{ textDecoration: "none", color: "white", fontSize: "large" }}>Media querie {new Date().toLocaleDateString()}</Link>
         </p>
 
         <Route exact path="/mediaQuerie" component={MediaQuerie} />

@@ -11,6 +11,10 @@ h1 {
   color: white;
 }
 
+.post-item ls{
+  list-style: none
+}
+
 @media(max-width: 950px) {
   .app {
     margin-left: 50px;
