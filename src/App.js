@@ -9,6 +9,7 @@ import Homepage from './components/pages/homepage';
 import MediaQuerie from './components/pages/mediaQuerie';
 import GPG from './components/pages/gpg';
 import CSS from './components/pages/css';
+import Intro from './components/pages/MERN/intro';
 
 
 
@@ -39,8 +40,13 @@ export default function App() {
 
         <Route exact path="/css" component={CSS} />
 
+        <p>
+          <Link to="/mern-intro" style={{ textDecoration: "none", color: "white" }}>Mern Intro</Link>
+        </p>
 
+        <Route exact path="/mern-intro" component={Intro} />
 
+        
         <Footer />
 
 
