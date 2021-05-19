@@ -1,4 +1,0 @@
-# MERN
-
-* hallo
-* tschüss
