@@ -4,6 +4,6 @@ author: brian
 date: May 11, 2021
 ---
 
-# Connecting MongoDB Atlas to Express Server App
+# My second Post 
 
-content about the M, E and N in MERN
+blbalbalbalbla
