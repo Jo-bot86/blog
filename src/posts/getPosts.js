@@ -47,8 +47,12 @@ const getPosts = () => {
         const metadataIndices = lines.reduce(getMetadataIndices, []) //returns an array with start and end index of metadata
         const metadata = parseMetadata({ lines, metadataIndices }) // returns an object with the metadata
         const content = parseContent({ lines, metadataIndices }) 
+
+        const date = new Date(metadata.date)
+        const timestamp = date.getTime() / 1000
+
         post = {
-          id: i + 1,
+          id: timestamp,
           title: metadata.title ? metadata.title : "no title",
           author: metadata.author ? metadata.author : "unknown author",
           date: metadata.date ? metadata.date : "no date",
@@ -56,7 +60,10 @@ const getPosts = () => {
         }
         postlist.push(post)
         if( i === files.length-1){
-          let data = JSON.stringify(postlist)
+          const sortedPostlist = postlist.sort((a,b) => {
+            return a.id < b.id ? 1 : -1
+          })
+          let data = JSON.stringify(sortedPostlist)
           fs.writeFileSync("src/posts/posts.json", data)
         }
       })
