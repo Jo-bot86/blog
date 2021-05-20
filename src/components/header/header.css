@@ -1,5 +1,6 @@
 .name {
-  
+  text-align: center;
+  color: white;
 }
 .header_links {
   text-align: center;
@@ -11,3 +12,4 @@
   display: inline;
   margin: 15px;
 }
+

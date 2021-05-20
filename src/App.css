@@ -1,5 +1,5 @@
 .app {
-  color: white;
+  color: gray;
   margin-left: 150px;
   margin-right: 150px;
   font-size: x-large;
@@ -7,8 +7,8 @@
 }
 
 h1 {
-  text-align: center;
-  color: white;
+  
+   
 }
 
 .post-item ls{
@@ -19,6 +19,7 @@ h1 {
   .app {
     margin-left: 50px;
     margin-right: 50px;
+    color: gray;
   }
   h1 {
     font-size: 30px;
