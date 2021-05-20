@@ -1,0 +1,19 @@
+.postlist {
+  padding-top: 20px;
+}
+
+.title {
+  color: white;
+  text-align: center;
+}
+.post {
+  /*text-align: center;*/
+  font-size: 20px;
+  border: 1px solid;
+  margin-bottom: 20px;
+  padding: 0 20px;
+}
+
+.content {
+  
+}
