@@ -6,11 +6,6 @@
   text-align: justify;
 }
 
-h1 {
-  
-   
-}
-
 .post-item ls{
   list-style: none
 }
@@ -20,6 +15,9 @@ h1 {
     margin-left: 50px;
     margin-right: 50px;
     color: gray;
+  }
+  .about {
+    margin-right: 10px;
   }
   h1 {
     font-size: 30px;
