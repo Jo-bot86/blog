@@ -9,7 +9,6 @@ const Postlist = () => {
   const excerptList = postlist.map(post => {
     return post.content.split(" ").slice(0,15).join(" ")
   })
-  console.log(excerptList)
   return (
     <Router>
       <div className="postlist">
@@ -18,12 +17,12 @@ const Postlist = () => {
           postlist.map((post, i) => {
             return (
               <div className="post" key={post.id}>
-                <h3>{post.title}</h3>
+                <h3><Link className="links" to={`/post/${post.id}`}>{post.title}</Link></h3>
                 <small>Published on {post.date} by {post.author}</small>
                 <hr />
                 <div className="content">
                   <Markdown children={excerptList[i] + " ..."} />
-                  read more
+                  <Link className="links" to={`/post/${post.id}`}>read more</Link>
                 </div>
               </div>
             )
