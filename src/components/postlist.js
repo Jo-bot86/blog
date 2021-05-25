@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import Markdown from 'react-markdown';
 
 import postlist from '../posts/posts.json';
@@ -10,7 +10,6 @@ const Postlist = () => {
     return post.content.split(" ").slice(0,15).join(" ")
   })
   return (
-    <Router>
       <div className="postlist">
         <h1 className="title">All Posts</h1>
         {postlist.length &&
@@ -28,7 +27,6 @@ const Postlist = () => {
             )
           })}
       </div>
-    </Router>
   )
 }
 
